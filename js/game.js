@@ -21,12 +21,22 @@ var game = {
         },
 
         cave: {
-            background_image: "fire.gif",
-            music: "Final-Fantasy-7-Boss-Battle.mp3",
-            message: "You come across a fire monster or something!",
+            message: "The cave is dark but you find a torch",
             choices: [
                 {
-                    text: "Continue",
+                    text: "Light Torch",
+                    nextLevel: "death",
+                },
+            ]
+        },
+        
+        death: {
+            background_image: "fire.gif",
+            music: "Final-Fantasy-7-Boss-Battle.mp3",
+            message: "You see teeth in front of you the last thing ever. What did you expect? ",
+            choices: [
+                {
+                    text: "Start over",
                     nextLevel: "start",
                 },
             ]
@@ -46,14 +56,26 @@ var game = {
             message: "Continue on your journey",
             choices: [
                 {
-                    text: "Continue ",
-                    nextLevel: "start",
+                    text: "Go Back",
+                    nextLevel: "cave",
                 },
                 {
-                    
+                    text:"Go Home",
+                    nextLevel:"home"
                 },
             ]
         },
-
+        
+        
+        home: {
+            background_image:"house.jpg",
+            message: "You arrive home and eat dinner. Afterwards you raid a village.",
+            choices: [
+                {
+                    text: "Start Over",
+                    nextLevel: "start",
+                },
+            ]
+        },
     }
 };
