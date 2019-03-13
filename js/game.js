@@ -49,6 +49,9 @@ var game = {
                     text: "Continue ",
                     nextLevel: "start",
                 },
+                {
+                    
+                },
             ]
         },
 
