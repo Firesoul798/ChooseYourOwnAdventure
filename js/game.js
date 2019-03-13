@@ -26,17 +26,27 @@ var game = {
             message: "You come across a fire monster or something!",
             choices: [
                 {
-                    text: "Start over",
+                    text: "Continue",
                     nextLevel: "start",
                 },
             ]
         },
 
         field: {
-            message: "Some adventurer you are...",
+            message: "Continue on your journey",
             choices: [
                 {
-                    text: "Start over",
+                    text: "Continue ",
+                    nextLevel: "start",
+                },
+            ]
+        },
+        
+        field: {
+            message: "Continue on your journey",
+            choices: [
+                {
+                    text: "Continue ",
                     nextLevel: "start",
                 },
             ]
